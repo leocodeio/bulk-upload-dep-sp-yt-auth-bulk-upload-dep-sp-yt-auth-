@@ -49,7 +49,7 @@ if (isRefresh) {
 
 // Video metadata
 const videoMetadata = {
-  title: "Damn!!",
+  title: "Damn Sung Jin-woo woooooohhhhhh,!!",
   description:
     "#anime #manga #otaku #animeart #animelife #animelover #animefan #weeb #weeaboo #animecommunity #animeworld #animeedits #animememes #cosplay #japaneseanime #animeaesthetic #animegirl #animeboy #animestyle #naruto #onepiece #dragonballz #dbz #attackontitan #deathnote #fmab #fullmetalalchemist #mha #myheroacademia #swordartonline #sao #tokyoghoul #bleach #fairytail #hunterxhunter #hxh #demonslayer #kimetsunoyaiba #evangelion #nge #cowboybebop #codegeass #steinsgate #blackclover #jojo #jjba #rezero #uzumakinaruto #luffy #goku #eren #lightyagami #midoriya #kirito #kaneki #ichigo #natsu #gon #tanjiro #shinji #spike #lelouch #okabe #asta #jotaro #shounen #shonen #seinen #shoujo #shojo #isekai #mecha #sliceoflife #fantasy #action #adventure #romance #comedy #drama #supernatural #scifi #horror #psychological #fighting #kawaii #sugoi #nani #baka #senpai #kun #chan #san #sama #sensei #nakama #dattebayo #plusultra #mangaka #seiyuu #voiceactor #animation #sakuga #openingsong #ending #ost #soundtrack #lightnovel #visualnovel #manhwa #manhua #animelove #animefeels #animehype #animemoments #animequotes #animescenes #animeships #animefights #animelogic #crunchyroll #funimation #netflix #animestreaming #animenetwork #vrv #hidive #gogoanime #animesketch #animeartist #animedrawing #mangaart #mangastyle #chibi #bishonen #bishojo #moe #fanart #animetwt #animefandom #animecosplay #animecon #convention #cosplayer #cosplaylife #animecollector #merchandise #figurecollector #seasonalanime #newanime #upcominganime #ongoing #animeschedule #simulcast #subbed #dubbed #mustwatch #recommended #topanime #bestanime #classicanime #cultanime #underratedanime #popularanime #japaneseculture #otakuculture #akihabara #japan #tokyo #animejapan",
   tags: [
@@ -102,6 +102,7 @@ const videoMetadata = {
     "rezero",
   ],
   privacyStatus: "public",
+  thumbnail: "./thumbnail.png",
 };
 
 async function uploadVideoForCreator(creatorId, videoPath) {
@@ -115,7 +116,7 @@ async function uploadVideoForCreator(creatorId, videoPath) {
     formData.append("description", videoMetadata.description);
     formData.append("tags", videoMetadata.tags.join(","));
     formData.append("privacyStatus", videoMetadata.privacyStatus);
-
+    // formData.append("thumbnail", fs.createReadStream(videoMetadata.thumbnail));
     console.log(`Starting upload for creator ID: ${creatorId}`);
 
     // Add upload progress event handler

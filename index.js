@@ -8,11 +8,11 @@ dotenv.config();
 // Configuration
 const VIDEO_PATH = "./upload.mp4";
 const YT_CREATOR_IDS = [
-  "110bbdc3-e8ec-4f8e-8573-d1a704871bb0",
-  "13eb2d56-7125-4897-8666-878a51b6e905",
-  "78e4da6d-d9ea-4ae0-a7a4-85982219ea65",
-  "a3a11c9c-2f01-48d9-ab6f-09b425c1891a",
-  "cbb95167-d440-44bb-89c2-1723790e23f5",
+  "8e5385a6-33da-40a6-8382-ad26135b5622",
+  "9bbd26a4-d592-4428-8438-10d83dfe63a3",
+  "7f1e5fa5-25d1-4e2a-b1c8-e2b87e4032a0",
+  "bbc2b810-c02f-4109-aebe-f4746609f34b",
+  "e337cf8b-7957-4c6a-a553-96b9bce66518",
 ];
 
 // refresh tokens if wanted

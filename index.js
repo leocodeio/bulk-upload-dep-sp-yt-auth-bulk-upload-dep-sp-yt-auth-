@@ -8,48 +8,16 @@ dotenv.config();
 // Configuration
 const VIDEO_PATH = "./upload.mp4";
 const YT_CREATOR_IDS = [
-  "8e5385a6-33da-40a6-8382-ad26135b5622",
-  "9bbd26a4-d592-4428-8438-10d83dfe63a3",
-  "7f1e5fa5-25d1-4e2a-b1c8-e2b87e4032a0",
-  "bbc2b810-c02f-4109-aebe-f4746609f34b",
-  "e337cf8b-7957-4c6a-a553-96b9bce66518",
+  "70a9d9af-5f7f-462d-9ff3-9e9d6e6ae501",
+  "0323cf94-da89-47c4-8995-e069f5d9f521",
+  "ac0db9c4-15dd-4256-82c1-b6baa9051f97",
+  "0ea49802-2678-460f-9046-20ad964f2d72",
+  "bad4a861-8629-4723-96af-fb13bca5afe2",
 ];
-
-// refresh tokens if wanted
-
-const isRefresh = process.env.REFRESH === "true";
-if (isRefresh) {
-  for (const creatorId of YT_CREATOR_IDS) {
-    const creatorResponse = await axios.get(
-      `${process.env.API_BASE_URL}/youtube/creator/id?id=${creatorId}`,
-      {
-        headers: {
-          "x-api-key": process.env.YT_SERVER_KEY,
-        },
-      }
-    );
-    // console.log(creator.data);
-
-    const creator = creatorResponse.data;
-    const refreshToken = creator.data.refreshToken;
-    // console.log(refreshToken);
-
-    // refresh the access token
-    const refreshResponse = await axios.get(
-      `${process.env.API_BASE_URL}/youtube/api/refresh-token?refreshToken=${refreshToken}`,
-      {
-        headers: {
-          "x-api-key": process.env.YT_SERVER_KEY,
-        },
-      }
-    );
-    console.log(refreshResponse.data);
-  }
-}
 
 // Video metadata
 const videoMetadata = {
-  title: "Damn Sung Jin-woo woooooohhhhhh,!!",
+  title: "bor is dead,!!",
   description:
     "#anime #manga #otaku #animeart #animelife #animelover #animefan #weeb #weeaboo #animecommunity #animeworld #animeedits #animememes #cosplay #japaneseanime #animeaesthetic #animegirl #animeboy #animestyle #naruto #onepiece #dragonballz #dbz #attackontitan #deathnote #fmab #fullmetalalchemist #mha #myheroacademia #swordartonline #sao #tokyoghoul #bleach #fairytail #hunterxhunter #hxh #demonslayer #kimetsunoyaiba #evangelion #nge #cowboybebop #codegeass #steinsgate #blackclover #jojo #jjba #rezero #uzumakinaruto #luffy #goku #eren #lightyagami #midoriya #kirito #kaneki #ichigo #natsu #gon #tanjiro #shinji #spike #lelouch #okabe #asta #jotaro #shounen #shonen #seinen #shoujo #shojo #isekai #mecha #sliceoflife #fantasy #action #adventure #romance #comedy #drama #supernatural #scifi #horror #psychological #fighting #kawaii #sugoi #nani #baka #senpai #kun #chan #san #sama #sensei #nakama #dattebayo #plusultra #mangaka #seiyuu #voiceactor #animation #sakuga #openingsong #ending #ost #soundtrack #lightnovel #visualnovel #manhwa #manhua #animelove #animefeels #animehype #animemoments #animequotes #animescenes #animeships #animefights #animelogic #crunchyroll #funimation #netflix #animestreaming #animenetwork #vrv #hidive #gogoanime #animesketch #animeartist #animedrawing #mangaart #mangastyle #chibi #bishonen #bishojo #moe #fanart #animetwt #animefandom #animecosplay #animecon #convention #cosplayer #cosplaylife #animecollector #merchandise #figurecollector #seasonalanime #newanime #upcominganime #ongoing #animeschedule #simulcast #subbed #dubbed #mustwatch #recommended #topanime #bestanime #classicanime #cultanime #underratedanime #popularanime #japaneseculture #otakuculture #akihabara #japan #tokyo #animejapan",
   tags: [

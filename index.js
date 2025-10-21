@@ -8,16 +8,16 @@ dotenv.config();
 // Configuration
 const VIDEO_PATH = "./upload.mp4";
 const YT_CREATOR_IDS = [
-  "77a5ae7a-629a-4ab4-93ad-8ea967b46faf",
-  "f327ef75-4b35-40e3-86b9-259c7368b726",
-  "71502043-90cc-4c4a-ba49-aa9e21cff0c2",
-  "51f336ee-eb01-4a2d-b421-723aa024761f",
-  "6a8bd9e5-c900-48fe-9062-4b9ee3280969",
+  "02adc81b-7d58-4099-9d47-0dd25ae5a08d",
+  "81d5fdf0-6d9a-4228-86b5-e29fdfa1532c",
+  "8c33f62b-9e43-4535-83ee-d4687a4ae369",
+  "517cdac3-c033-490c-8409-ca29e17e9e15",
+  "78856825-699c-4c20-b977-d7c163a738c7",
 ];
 
 // Video metadata
 const videoMetadata = {
-  title: "BROOK is the MVP of whole cake island arc ! what do you think? | One Piece | AMV",
+  title: "This df would be so dope, if not wasted on this..what do you think?",
   description:
     "#anime #manga #otaku #animeart #animelife #animelover #animefan #weeb #weeaboo #animecommunity #animeworld #animeedits #animememes #cosplay #japaneseanime #animeaesthetic #animegirl #animeboy #animestyle #naruto #onepiece #dragonballz #dbz #attackontitan #deathnote #fmab #fullmetalalchemist #mha #myheroacademia #swordartonline #sao #tokyoghoul #bleach #fairytail #hunterxhunter #hxh #demonslayer #kimetsunoyaiba #evangelion #nge #cowboybebop #codegeass #steinsgate #blackclover #jojo #jjba #rezero #uzumakinaruto #luffy #goku #eren #lightyagami #midoriya #kirito #kaneki #ichigo #natsu #gon #tanjiro #shinji #spike #lelouch #okabe #asta #jotaro #shounen #shonen #seinen #shoujo #shojo #isekai #mecha #sliceoflife #fantasy #action #adventure #romance #comedy #drama #supernatural #scifi #horror #psychological #fighting #kawaii #sugoi #nani #baka #senpai #kun #chan #san #sama #sensei #nakama #dattebayo #plusultra #mangaka #seiyuu #voiceactor #animation #sakuga #openingsong #ending #ost #soundtrack #lightnovel #visualnovel #manhwa #manhua #animelove #animefeels #animehype #animemoments #animequotes #animescenes #animeships #animefights #animelogic #crunchyroll #funimation #netflix #animestreaming #animenetwork #vrv #hidive #gogoanime #animesketch #animeartist #animedrawing #mangaart #mangastyle #chibi #bishonen #bishojo #moe #fanart #animetwt #animefandom #animecosplay #animecon #convention #cosplayer #cosplaylife #animecollector #merchandise #figurecollector #seasonalanime #newanime #upcominganime #ongoing #animeschedule #simulcast #subbed #dubbed #mustwatch #recommended #topanime #bestanime #classicanime #cultanime #underratedanime #popularanime #japaneseculture #otakuculture #akihabara #japan #tokyo #animejapan",
   tags: [

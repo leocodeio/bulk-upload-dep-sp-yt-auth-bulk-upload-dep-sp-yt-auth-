@@ -9,6 +9,13 @@ import * as basicAuth from 'express-basic-auth';
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
   const configService = app.get(ConfigService);
+  
+  // Enable CORS for web interface
+  app.enableCors({
+    origin: ['http://localhost:3000', 'http://127.0.0.1:3000'],
+    credentials: true,
+  });
+
   const swaggerProtection = {
     route: configService.get('SWAGGER_ROUTE'),
     password: configService.get('SWAGGER_PASSWORD'),

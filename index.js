@@ -8,16 +8,16 @@ dotenv.config();
 // Configuration
 const VIDEO_PATH = "./upload.mp4";
 const YT_CREATOR_IDS = [
-  "02adc81b-7d58-4099-9d47-0dd25ae5a08d",
-  "81d5fdf0-6d9a-4228-86b5-e29fdfa1532c",
-  "8c33f62b-9e43-4535-83ee-d4687a4ae369",
-  "517cdac3-c033-490c-8409-ca29e17e9e15",
-  "78856825-699c-4c20-b977-d7c163a738c7",
+  "a856880a-f5f9-4296-b2d4-50ec740e0385",
+  "b15d918d-a9a1-4e57-ad77-0828985b691c",
+  "cc2c9d1d-dfac-4ac6-b611-a9c557bd473e",
+  "90c20adb-6210-4515-b0bc-701e1a3f339f",
+  "d99ea175-8731-4b65-a6ca-eb7a3141f989",
 ];
 
 // Video metadata
 const videoMetadata = {
-  title: "This df would be so dope, if not wasted on this..what do you think?",
+  title: "Relatable?????!!!!",
   description:
     "#anime #manga #otaku #animeart #animelife #animelover #animefan #weeb #weeaboo #animecommunity #animeworld #animeedits #animememes #cosplay #japaneseanime #animeaesthetic #animegirl #animeboy #animestyle #naruto #onepiece #dragonballz #dbz #attackontitan #deathnote #fmab #fullmetalalchemist #mha #myheroacademia #swordartonline #sao #tokyoghoul #bleach #fairytail #hunterxhunter #hxh #demonslayer #kimetsunoyaiba #evangelion #nge #cowboybebop #codegeass #steinsgate #blackclover #jojo #jjba #rezero #uzumakinaruto #luffy #goku #eren #lightyagami #midoriya #kirito #kaneki #ichigo #natsu #gon #tanjiro #shinji #spike #lelouch #okabe #asta #jotaro #shounen #shonen #seinen #shoujo #shojo #isekai #mecha #sliceoflife #fantasy #action #adventure #romance #comedy #drama #supernatural #scifi #horror #psychological #fighting #kawaii #sugoi #nani #baka #senpai #kun #chan #san #sama #sensei #nakama #dattebayo #plusultra #mangaka #seiyuu #voiceactor #animation #sakuga #openingsong #ending #ost #soundtrack #lightnovel #visualnovel #manhwa #manhua #animelove #animefeels #animehype #animemoments #animequotes #animescenes #animeships #animefights #animelogic #crunchyroll #funimation #netflix #animestreaming #animenetwork #vrv #hidive #gogoanime #animesketch #animeartist #animedrawing #mangaart #mangastyle #chibi #bishonen #bishojo #moe #fanart #animetwt #animefandom #animecosplay #animecon #convention #cosplayer #cosplaylife #animecollector #merchandise #figurecollector #seasonalanime #newanime #upcominganime #ongoing #animeschedule #simulcast #subbed #dubbed #mustwatch #recommended #topanime #bestanime #classicanime #cultanime #underratedanime #popularanime #japaneseculture #otakuculture #akihabara #japan #tokyo #animejapan",
   tags: [
